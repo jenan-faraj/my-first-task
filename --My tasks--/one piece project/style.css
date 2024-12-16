@@ -1,0 +1,604 @@
+* {
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #134B70;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #15142c;
+    max-height: 40px;
+}
+
+header .profile {
+    position: fixed;
+    left: 30px;
+    top: 30px;
+    font-size: x-large;
+    font-weight: 700;
+    color: #fff;
+}
+
+header .bars {
+    position: fixed;
+    right: 15px;
+    top: 30px;
+    font-size: x-large;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 15px;
+}
+
+header .profile:hover,
+.bars:hover {
+    color: rgb(97, 42, 42);
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin: -20px 0 10px -25px;
+    position: relative;
+    top: 5px;
+    font-style: italic;
+}
+
+.logo::first-letter {
+    color: #8D493A;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    bottom: 5px;
+
+}
+
+header ul li {
+    list-style: none;
+    position: relative;
+
+
+}
+
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+    color: rgb(231, 216, 187);
+    text-decoration: none;
+
+}
+
+header ul li a:hover {
+    color: red;
+}
+
+.bannar {
+    position: relative;
+    min-height: 100vh;
+    background-image:
+        linear-gradient(to right, #01022de5 35%, #00000088),
+        url(https://c4.wallpaperflare.com/wallpaper/965/883/624/manga-one-piece-wallpaper-preview.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+
+.bannar:hover {
+    background-image:
+        linear-gradient(to right, #01022de5 35%, #7d7da700),
+        url(https://c4.wallpaperflare.com/wallpaper/965/883/624/manga-one-piece-wallpaper-preview.jpg);
+}
+
+section div {
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+section div h1 {
+    color: #EEEEEE;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    top: 150px;
+    left: 80px;
+    margin: 20px 0;
+
+}
+
+section div a {
+    color: #EEEEEE;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    top: 170px;
+    left: 80px;
+    position: relative;
+    display: inline-block;
+    font-weight: 600;
+    border: 1px solid;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+section div a:hover {
+    color: aqua;
+}
+
+section div p {
+    color: #EEEEEE;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    top: 200px;
+    left: 80px;
+    flex-wrap: wrap;
+
+}
+
+main {
+    width: 100%;
+    max-height: 100vh;
+    color: #EEEEEE;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin: 0 0 200px 0;
+
+}
+
+main div .img img {
+    width: 200px;
+    box-shadow: 5px 5px 10px rgb(1, 1, 51);
+
+}
+
+main div .test2 nav {
+    width: 500px;
+    flex-wrap: wrap;
+    font-size: larger;
+    font-weight: 600;
+    padding: 15px;
+    flex-direction: column-reverse;
+    text-shadow: 5px 5px 10px #15142c;
+    padding: 3px;
+}
+
+
+
+
+@media (min-width:592px) and (max-width:700px) {
+    .logo {
+        position: relative;
+        top: -10px;
+    }
+
+    header ul li a {
+        position: relative;
+        top: -10px;
+    }
+}
+
+.logo::first-letter {
+    color: #8D493A;
+}
+
+@media (max-width:591px) {
+    .logo {
+        position: relative;
+        top: -10px;
+        font-size: x-large;
+    }
+
+    header ul li a {
+        position: relative;
+        top: -10px;
+        font-size: 12.5px;
+    }
+}
+
+@media (max-width:595px) {
+    section .textbx p {
+        max-width: 400px;
+        position: relative;
+        left: 20px;
+    }
+
+    section .textbx h1 {
+        max-width: 400px;
+        position: relative;
+        left: 20px;
+    }
+
+    section .textbx a {
+        max-width: 400px;
+        position: relative;
+        left: 20px;
+    }
+
+    main div .test2 nav {
+        max-width: 400px;
+        position: relative;
+        left: 20px;
+    }
+
+}
+
+main .cards {
+    color: #15142c;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 8px;
+    margin: 50px 20px 20px 20px;
+    height: 150px;
+    justify-content: space-around;
+    
+    
+}
+
+main .cards .luffy{
+    margin-bottom: 100px;
+    background-color: #EEEEEE;
+    width: 300px;
+    border: 2px rgb(165, 168, 179) solid;
+    border-radius: 20px;
+    padding: 110px 10px 10px 10px;
+    box-shadow: 5px 5px 10px #15142c;
+    
+}
+main .cards p, h3{
+    font-weight: 700;
+    padding: 3px;
+}
+main .cards .luffy img{
+    width: 200px;
+    margin: -250px 0 0 0;
+    padding: 0;
+    position: relative;
+    left: 35px;
+    border-radius: 50%;
+    box-shadow:5px 5px 10px #15142c;
+}
+main .cards .zoro img{
+    width: 200px;
+    margin: -250px 0 0 0;
+    padding: 0;
+    position: relative;
+    left: 35px;
+    border-radius: 50%;
+    box-shadow:5px 5px 10px #15142c;
+}
+main .cards .nami img{
+    width: 200px;
+    margin: -250px 0 0 0;
+    padding: 0;
+    position: relative;
+    left: 35px;
+    border-radius: 50%;
+    box-shadow:5px 5px 10px #15142c;
+}
+main .cards .sanji img{
+    width: 200px;
+    margin: -250px 0 0 0;
+    padding: 0;
+    position: relative;
+    left: 35px;
+    border-radius: 50%;
+    box-shadow:5px 5px 10px #15142c;
+}
+main .cards .usopp img{
+    width: 200px;
+    margin: -250px 0 0 0;
+    padding: 0;
+    position: relative;
+    left: 35px;
+    border-radius: 50%;
+    box-shadow:5px 5px 10px #15142c;
+}
+main .cards .chopper img{
+    width: 200px;
+    margin: -250px 0 0 0;
+    padding: 0;
+    position: relative;
+    left: 35px;
+    border-radius: 50%;
+    box-shadow:5px 5px 10px #15142c;
+}
+main .cards .robin img{
+    width: 200px;
+    margin: -250px 0 0 0;
+    padding: 0;
+    position: relative;
+    left: 35px;
+    border-radius: 50%;
+    box-shadow:5px 5px 10px #15142c;
+}
+main .cards .franky img{
+    width: 200px;
+    margin: -250px 0 0 0;
+    padding: 0;
+    position: relative;
+    left: 35px;
+    border-radius: 50%;
+    box-shadow:5px 5px 10px #15142c;
+}
+main .cards .brook img{
+    width: 200px;
+    margin: -250px 0 0 0;
+    padding: 0;
+    position: relative;
+    left: 35px;
+    border-radius: 50%;
+    box-shadow:5px 5px 10px #15142c;
+}
+main .cards .jinbi img{
+    width: 200px;
+    margin: -250px 0 0 0;
+    padding: 0;
+    position: relative;
+    left: 35px;
+    border-radius: 50%;
+    box-shadow:5px 5px 10px #15142c;
+}
+
+main .cards .zoro {
+    margin-bottom: 100px;
+    background-color: #EEEEEE;
+    width: 300px;
+    border: 2px rgb(165, 168, 179) solid;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #15142c;
+    padding: 110px 10px 10px 10px;
+}
+
+main .cards .nami {
+    margin-bottom: 100px;
+    background-color: #EEEEEE;
+    width: 300px;
+    border: 2px rgb(165, 168, 179) solid;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #15142c;
+    padding: 110px 10px 10px 10px;
+}
+
+main .cards .usopp {
+    margin-bottom: 100px;
+    background-color: #EEEEEE;
+    width: 300px;
+    border: 2px rgb(165, 168, 179) solid;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #15142c;
+    padding: 110px 10px 10px 10px;
+}
+
+main .cards .sanji {
+    margin-bottom: 100px;
+    background-color: #EEEEEE;
+    width: 300px;
+    border: 2px rgb(165, 168, 179) solid;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #15142c;
+    padding: 110px 10px 10px 10px;
+}
+
+main .cards .chopper {
+    margin-bottom: 100px;
+    background-color: #EEEEEE;
+    width: 300px;
+    border: 2px rgb(165, 168, 179) solid;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #15142c;
+    padding: 110px 10px 10px 10px;
+}
+
+main .cards .robin {
+    margin-bottom: 100px;
+    background-color: #EEEEEE;
+    width: 300px;
+    border: 2px rgb(165, 168, 179) solid;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #15142c;
+    padding: 110px 10px 10px 10px;
+}
+
+main .cards .franky {
+    margin-bottom: 100px;
+    background-color: #EEEEEE;
+    width: 300px;
+    border: 2px rgb(165, 168, 179) solid;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #15142c;
+    padding: 110px 10px 10px 10px;
+}
+
+main .cards .brook {
+    margin-bottom: 100px;
+    background-color: #EEEEEE;
+    width: 300px;
+    border: 2px rgb(165, 168, 179) solid;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #15142c;
+    padding: 110px 10px 10px 10px;
+}
+
+main .cards .jinbi {
+    margin-bottom: 100px;
+    background-color: #EEEEEE;
+    width: 300px;
+    border: 2px rgb(165, 168, 179) solid;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #15142c;
+    padding: 110px 10px 10px 10px;
+}
+@media(max-width:667px){
+    main .cards .luffy{
+        width: 100%;
+        
+    }
+    main .cards .zoro{
+        width: 100%;
+        
+    }
+    main .cards .nami{
+        width: 100%;
+        
+    }
+    main .cards .usopp{
+        width: 100%;
+        
+    }
+    main .cards .sanji{
+        width: 100%;
+        
+    }
+    main .cards .chopper{
+        width: 100%;
+        
+    }
+    main .cards .robin{
+        width: 100%;
+        
+    }
+    main .cards .franky{
+        width: 100%;
+        
+    }
+    main .cards .brook{
+        width: 100%;
+        
+    }
+    main .cards .jinbi{
+        width: 100%;
+
+    }
+}
+main .table table{
+    font-size: 20px;
+    position: relative;
+    bottom: -1200px;
+    width: 100%;
+    text-align: center;
+    border-spacing: 4px;
+}
+@media (min-width:957px) and (max-width:1280px){
+    main .table table{
+        margin-top: 900px;
+    } 
+    footer{
+        margin-top: 950px;
+    }
+}
+@media (min-width:655px) and (max-width:956px){
+    main .table table{
+        margin-top: 800px;
+    } 
+    footer{
+        margin-top: 1050px;
+    }
+}
+@media (max-width:654px){
+    main .table table{
+        margin-top: 3100px;
+    
+    } 
+    footer{
+        margin-top: 3450px;
+    }
+    footer .message form{
+        margin: 0 90px;
+        
+    }
+}
+
+
+td, th{
+    background-color: #c3d3d6;
+    height: 40px;
+    border-radius: 8px;
+
+}
+td:hover{
+    background-color: #ffffff55;
+    cursor: pointer;
+    
+}
+th{
+    background-color: #15142c;
+    color: #EEEEEE;
+}
+td{
+    color: #15142c;
+}
+footer{
+    background-color: #212031;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    bottom: -2000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+footer .message form label, footer p{
+    color: #EEEEEE;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px;
+}
+footer .footer a i{
+    color: #a0bbd1;
+    font-size: xx-large;
+    margin: 4px;
+}
+footer .footer{
+    display: flex;
+    justify-content: space-around;
+  
+}
+footer .footer a i:hover{
+    color: rgb(219, 61, 61);
+}
+footer .message input{
+    font-size: 20px;
+    border-radius: 8px;
+}
+footer .message .send:hover{
+    cursor: pointer;
+    color: rgb(219, 61, 61);
+    
+    
+}

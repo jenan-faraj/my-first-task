@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-image: url(https://i.pinimg.com/564x/e3/9d/7d/e39d7d23ac75ebf4a6ce465904c64e2a.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+header {
+    position: relative;
+    display: flex;
+    padding: 5px 10px;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #1a0a34;
+    color: #eee;
+    z-index: 1000;
+}
+header .bars, .profile{
+    font-size: 20px;
+    margin: 5px;
+}
+.logo::first-letter {
+    color: #9e6659;
+}
+header .bars:hover, .profile:hover{
+    color: #ddbbd2;
+    border: 2px solid rgb(37, 0, 139);
+    border-radius: 25%;
+    padding: 5px;
+    background-color: rgb(37, 0, 139);
+    
+}
+ul li a:hover{
+    color: #ddbbd2;
+    border: 2px solid rgb(37, 0, 139);
+    border-radius: 25%;
+    padding: 5px;
+    background-color: rgb(37, 0, 139);
+}
+header .logo{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-style: italic;
+}
+header .link ul li{
+    list-style: none;
+    margin: 5px;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+header .link ul{
+    display: flex;
+    justify-content: space-around;
+}
+header a {
+    text-decoration: none;
+    color: #eee;
+}
+.bannar{
+    width: 100%;
+    height: 90vh;
+    background-image: 
+    
+    url(https://i.pinimg.com/736x/1f/04/bc/1f04bccdc7cb3f7fd1957bdf9742ce25.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.bannar .post{
+    background-color: rgba(94, 87, 136, 0.473);
+    color: #eee;
+    max-width: 500px;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    
+    flex-wrap: wrap;
+    margin: 5px 5px 20px 5px;
+    position: relative;
+    top: 15px;
+    text-shadow: 2px 2px 10px rgb(0, 0, 37);
+}
+.bannar .img img{
+    width: 230px;
+    height: 350px;
+    border-radius: 20px;
+    filter: drop-shadow(1px 1px 20px rgb(177, 175, 175));
+    display: flex;
+    position: relative;
+    top: 35px;
+    transform: translateY(0px);
+    animation: float 6s ease-in-out infinite;
+
+}
+@keyframes float {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@media (max-width:727px){
+    .season .seas{
+        margin-left: -16%;
+        margin-right: -16%;
+    }
+}
+
+.season{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.seas{
+    display: flex;
+    height: 85vh;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.seas .sea1{
+    min-width: auto;
+    min-height: auto;
+    background-image: url(https://i.pinimg.com/564x/ce/cd/ab/cecdab83069d27ccd3d8c3183a94026e.jpg);
+    box-shadow: 5px 5px 10px black;
+    border-radius: 60px 10px 60px 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.seas > div{
+    margin: 20px;
+    flex: 1;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+.seas > div:hover{
+    flex: 5;
+}
+.seas .sea3{
+    background-image: url(https://i.pinimg.com/736x/64/ef/d8/64efd87e0abb49c6e3a4985e98b8dfd2.jpg);
+    box-shadow: 5px 5px 10px black;
+    border-radius: 60px 10px 60px 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: auto;
+    min-height: auto;
+    cursor: pointer;
+}
+.seas .sea4{
+    background-image: url(https://i.pinimg.com/564x/04/da/7a/04da7a524dcf79b3ae828fc7541bd638.jpg);
+    box-shadow: 5px 5px 10px black;
+    border-radius: 60px 10px 60px 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: auto;
+    min-height: auto;
+    cursor: pointer;
+}
+.seas a i{
+    color: #eee;
+}
+.seas a i:hover{
+    color: #fd3636;
+}
+.main .characters {
+    margin: 100px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+.main .characters .gojo{
+    width: 300px;
+    border: 2px solid rgba(112, 128, 144, 0.514);
+    background-color: #38383881;
+    color: #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
+    padding: 5px;
+
+}
+.main .characters .yuji{
+    width: 300px;
+    border: 2px solid rgba(112, 128, 144, 0.514);
+    background-color: #38383881;
+    color: #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
+    padding: 5px;
+}
+.main .characters .megomi{
+    width: 300px;
+    border: 2px solid rgba(112, 128, 144, 0.514);
+    background-color: #38383881;
+    color: #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
+    padding: 5px;
+}
+.main .characters .nobara{
+    width: 300px;
+    border: 2px solid rgba(112, 128, 144, 0.514);
+    background-color: #38383881;
+    color: #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
+    padding: 5px;
+}
+.main .characters .sukuna{
+    width: 300px;
+    border: 2px solid rgba(112, 128, 144, 0.514);
+    background-color: #38383881;
+    color: #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
+    padding: 5px;
+}
+.main .characters .toji{
+    width: 300px;
+    border: 2px solid rgba(112, 128, 144, 0.514);
+    background-color: #38383881;
+    color: #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
+    padding: 5px;
+}
+.main .characters div p{
+    padding: 5px;
+    color: #c5c2c2;
+}
+.main .characters .gojo img{
+    width: 100%;
+    border-radius: 20px;
+}
+.main .characters .yuji img{
+    width: 100%;
+    border-radius: 20px;
+    
+}
+.main .characters .megomi img{
+    width: 100%;
+    border-radius: 20px;
+    
+}
+.main .characters .nobara img{
+    width: 100%;
+    border-radius: 20px;
+    
+}
+.main .characters .sukuna img{
+    width: 100%;
+    border-radius: 20px;   
+}
+.main .characters .toji img{
+    width: 100%;
+    border-radius: 20px;   
+}
+.strong .table table{
+    font-size: 20px;
+    position: relative;
+    width: 80%;
+    text-align: center;
+    border-spacing: 4px;
+    margin: 100px 10%;
+}
+td, th{
+    background-color: #cac3d6;
+    height: 40px;
+    border-radius: 8px;
+
+}
+.td:hover{
+    background-color: #0b255c7c;
+    color: #e5dbfd;
+}
+.strong .table table tbody tr td a{
+text-decoration: none;
+color: #58338a;
+}
+.strong .table table tbody tr td a:hover{
+    color: #e46363;
+}
+th{
+    background-color: #29025c;
+    color: #EEEEEE;
+    padding: 5px;
+}
+td{
+    filter: drop-shadow(1px 1px 20px rgb(0, 0, 0));
+    color: #242a4d;
+    
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #dadada;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer div p,footer div a{
+    padding: 10px;
+    font-size: 20PX;
+}
+footer div a i{
+    color: #000000;
+    filter: drop-shadow(1px 1px 5px rgb(111, 0, 255));
+    font-size: 30PX;
+}
+footer div a i:hover{
+    color: #953bb1;
+}
+footer section form .text{
+    border-radius: 10px 30px 10px 30px;
+    font-size: 20px;
+    height: 70px;
+    padding: 5px;
+    background-color: #59338a77;
+    color: #362355;
+}
+footer section form .sub{
+    border-radius: 35%;
+    border: 1px solid #362355;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+    background-color: #c9c4d1;
+    color: #1a0a34;
+}
+footer section form .sub:hover{
+    background-color: #441d68;
+    color: #eee;
+}
