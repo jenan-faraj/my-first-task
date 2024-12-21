@@ -17,8 +17,9 @@ body{
 
 header{
   background-color: #E5E0FF;
-  grid-column: 1 / 13;
+  grid-column: 100;
   grid-row: 1/2;
+  width: 100%;
 }
 nav{
   display: flex;
