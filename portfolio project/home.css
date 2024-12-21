@@ -37,7 +37,7 @@ body{
   padding-left: 20px;
   text-decoration: none;
 }
-.navbar-links .first-link{
+.navbar-links .selected{
   color: #7286d3;
 }
 .navbar-links li a:hover{
@@ -95,7 +95,14 @@ body{
   padding: 10px;
   border-bottom: 1px solid #7286d3;
 }
-
+.list-group ul li a{
+  text-decoration: none;
+  color: #3b1c32;
+  font-weight: bold;
+}
+.list-group ul li a:hover{
+  color: #7286d3;
+}
 .list-group input[type="checkbox"]:checked ~ ul {
   max-height: 200px; 
 }
@@ -194,7 +201,7 @@ main{
   height: 100%;
   background-size: cover;
   background-position: center;
-  background-image: url(images/Screenshot\ 2024-12-20\ 164540.png);
+  background-image: url(images/Home/Screenshot\ 2024-12-20\ 164540.png);
 }
 .card-image2 {
   border-radius: 8px 0px 0px 8px;
@@ -202,7 +209,7 @@ main{
   height: 100%;
   background-size: cover;
   background-position: center;
-  background-image: url(images/Screenshot\ 2024-12-20\ 164608.png);
+  background-image: url(images/Home/Screenshot\ 2024-12-20\ 164608.png);
 }
 .card-image3 {
   border-radius: 8px 0px 0px 8px;
@@ -210,7 +217,7 @@ main{
   height: 100%;
   background-size: cover;
   background-position: center;
-  background-image: url(images/Screenshot\ 2024-12-20\ 164629.png);
+  background-image: url(images/Home/Screenshot\ 2024-12-20\ 164629.png);
 }
 
 .card-text {
@@ -235,7 +242,7 @@ main{
   }
 }
 
-
+/* footer */
 Footer{
   margin-top: 15px;
   background-color: #7286d3;

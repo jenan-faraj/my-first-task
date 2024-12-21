@@ -1,0 +1,161 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-color: #FFF2F2;
+  min-height: 100vh;
+}
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #e5e0ff;
+  color: #3b1c32;
+  height: 10%;
+}
+
+.navbar-logo img {
+  width: 100px;
+  height: 60px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+}
+
+.navbar-links li a {
+  color: #3b1c32;
+  font-weight: bolder;
+  padding-left: 20px;
+  text-decoration: none;
+}
+.navbar-links .selected{
+  color: #7286d3;
+}
+.navbar-links li a:hover{
+  color: #7286d3;
+}
+
+.navbar .list-group {
+  display: none;
+}
+@media (max-width: 553px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar .list-group {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar-links.active {
+    display: block;
+    background-color: #e5e0ff;
+  }
+
+  .list-group {
+    width: 100px;
+  }
+}
+
+.list-group label {
+  display: block;
+  color: #7286d3;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.list-group input[type="checkbox"] {
+  display: none;
+}
+
+.list-group ul {
+  list-style: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  color: #7286d3;
+  border: 1px solid #7286d3;
+  border-radius: 5px;
+}
+
+.list-group ul li {
+  padding: 10px;
+  border-bottom: 1px solid #7286d3;
+}
+.list-group ul li a{
+  text-decoration: none;
+  color: #3b1c32;
+  font-weight: bold;
+}
+.list-group ul li a:hover{
+  color: #7286d3;
+}
+.list-group input[type="checkbox"]:checked ~ ul {
+  max-height: 200px; 
+}
+
+
+/* main */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image-placeholder {
+    background-color: #e6e6e6;
+    height: 100px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .text-placeholder {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .text-placeholder p {
+    margin: 5px 0;
+  }
+  
+  .buttons {
+    margin-top: 10px;
+  }
+  
+  .buttons button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .buttons button:hover {
+    background-color: #555;
+  }

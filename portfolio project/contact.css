@@ -1,0 +1,236 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  body{
+    background-color: #FFF2F2;
+    min-height: 100vh;
+  }
+  /* navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #e5e0ff;
+    color: #3b1c32;
+    height: 10%;
+  }
+  
+  .navbar-logo img {
+    width: 100px;
+    height: 60px;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar-links li {
+    margin-left: 20px;
+  }
+  
+  .navbar-links li a {
+    color: #3b1c32;
+    font-weight: bolder;
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  .navbar-links .selected{
+    color: #7286d3;
+  }
+  .navbar-links li a:hover{
+    color: #7286d3;
+  }
+  
+  .navbar .list-group {
+    display: none;
+  }
+  @media (max-width: 553px) {
+    .navbar-links {
+      display: none;
+    }
+  
+    .navbar .list-group {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .navbar-links.active {
+      display: block;
+      background-color: #e5e0ff;
+    }
+  
+    .list-group {
+      width: 100px;
+    }
+  }
+  
+  .list-group label {
+    display: block;
+    color: #7286d3;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+  
+  .list-group input[type="checkbox"] {
+    display: none;
+  }
+  
+  .list-group ul {
+    list-style: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    color: #7286d3;
+    border: 1px solid #7286d3;
+    border-radius: 5px;
+  }
+  
+  .list-group ul li {
+    padding: 10px;
+    border-bottom: 1px solid #7286d3;
+  }
+  .list-group ul li a{
+    text-decoration: none;
+    color: #3b1c32;
+    font-weight: bold;
+  }
+  .list-group ul li a:hover{
+    color: #7286d3;
+  }
+  .list-group input[type="checkbox"]:checked ~ ul {
+    max-height: 200px; 
+  }
+
+ /* section */
+  section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    
+}
+.form-container{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e5e0ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #3b1c3250;
+}
+
+.form-container form{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   color: #7286d3;
+}
+.form-container img{
+    width: 60%;
+    height: 500px;
+
+}
+.form-container form input{
+    background-color: #e5e0ff;
+    border: none;
+    box-shadow: 0 4px 8px #3b1c3250;
+    border-radius: 8px;
+    padding: 5px;
+    min-width: 200px;
+    height: 25px;
+    color: #7286d3;
+}   
+.message-input{
+    height: 50px;
+}
+
+.form-container button{
+    width: 30%;
+    padding: 5px;
+    color: #7286d3;
+    background-color: #e5e0ff;
+    box-shadow: 0 4px 8px #3b1c3250;
+    border: none;
+    border-radius: 8px;
+    margin: 10px;
+}
+.form-container button:hover{
+    background-color: #7286d3;
+    color: #e5e0ff;
+}
+@media (max-width: 1022px){
+    .form-container{
+        flex-direction: column;
+        height: 100%;
+        
+    }
+    .form-container img{
+        margin: 0px;
+        width: 100%;
+        height: 500px;
+    }
+}
+
+
+/* footer */
+Footer{
+    margin-top: 15px;
+    background-color: #7286d3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #3b1c32;
+    height: 27vh;
+  }
+  footer .logo-img{
+    padding: 10px;
+    width: 200px;
+    padding-left: 20px;
+  }
+  
+  .links-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+  }
+  .links-container .links a{
+    text-decoration: none;
+    color: #3b1c32;
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 20px;
+  }
+  .links-container .links a:hover{
+    color: #e5e0ff;
+  }
+  .socialMedia-container a img{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+  }
+  @media (max-width: 942px){
+    .links-container{
+      font-size: small;
+    }
+    .socialMedia-container a img{
+      width: 30px;
+      height: 30px;
+      padding: 5px;
+    }
+    footer .logo-img{
+      width: 120px;
+    }
+    footer{
+      height: 30vh;
+      font-size: small;
+    }
+  }
