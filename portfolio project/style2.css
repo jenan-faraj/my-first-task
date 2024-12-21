@@ -35,7 +35,7 @@
 .navbar .list-group {
   display: none;
 }
-@media (max-width: 600px) {
+@media (max-width: 553px) {
   .navbar-links {
     display: none;
   }
@@ -136,4 +136,14 @@
   color: #FFF2F2;
   border: 2px solid #FFF2F2;
   background-color: #7286d3;
+}
+@media (max-width: 553px){
+  .section-container{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .section-container img{
+    width: 200px;
+    border-radius:0px 0px 8px 8px;
+  }
 }
