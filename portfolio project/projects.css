@@ -2,8 +2,8 @@
   margin: 0px;
   padding: 0px;
 }
-body{
-  background-color: #FFF2F2;
+body {
+  background-color: #fff2f2;
   min-height: 100vh;
 }
 /* navbar */
@@ -15,7 +15,6 @@ body{
   background-color: #e5e0ff;
   color: #3b1c32;
   height: 10%;
-  
 }
 
 .navbar-logo img {
@@ -38,10 +37,10 @@ body{
   padding-left: 20px;
   text-decoration: none;
 }
-.navbar-links .selected{
+.navbar-links .selected {
   color: #7286d3;
 }
-.navbar-links li a:hover{
+.navbar-links li a:hover {
   color: #7286d3;
 }
 
@@ -96,146 +95,141 @@ body{
   padding: 10px;
   border-bottom: 1px solid #7286d3;
 }
-.list-group ul li a{
+.list-group ul li a {
   text-decoration: none;
   color: #3b1c32;
   font-weight: bold;
 }
-.list-group ul li a:hover{
+.list-group ul li a:hover {
   color: #7286d3;
 }
 .list-group input[type="checkbox"]:checked ~ ul {
-  max-height: 200px; 
+  max-height: 200px;
 }
-
 
 /* main */
 .cards-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    margin: 10px;
-    gap: 20px;
-  }
-  .figmaTasks{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 1.5rem;
-    align-items: center;
-  }
-  
-  .card {
-    background-color: #FFF2F2;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    width: 250px;
-    height: 300px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    
-  }
-  .img1{
-      background-image: url(images/projects/Screenshot\ 2024-12-22\ 091543.png);
-      background-position: center;
-      background-size: cover;
-    }
-    .img2{
-      background-image: url(images/projects/Screenshot\ 2024-12-22\ 093156.png);
-      background-position: center;
-      background-size: cover;
-  }
-    .img3{
-      background-image: url(images/projects/Screenshot\ 2024-12-22\ 093536.png);
-      background-position: center;
-      background-size: cover;
-  }
-    .img4{
-      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGWkLDyRM63o3MhIWMUaqjiclMscW40NwdcA&s");
-      background-position: center;
-      background-size: cover;
-  }
-    .img5{
-      background-image: url(images/projects/Screenshot\ 2024-12-22\ 122122.png);
-      background-position: center;
-      background-size: cover;
-  }
-    .img6{
-      background-image: url(images/projects/Screenshot\ 2024-12-22\ 122330.png);
-      background-position: center;
-      background-size: cover;
-  }
-    .img7{
-      background-image: url(images/projects/Screenshot\ 2024-12-22\ 123208.png);
-      background-position: center;
-      background-size: cover;
-  }
-    .img9{
-      background-image: url(images/projects/Screenshot\ 2024-12-22\ 123441.png);
-      background-position: center;
-      background-size: cover;
-  }
-    .img10{
-      background-image: url(images/projects/Screenshot\ 2024-12-22\ 123513.png);
-      background-position: center;
-      background-size: cover;
-  }
-    .img11{
-      background-image: url(images/projects/Screenshot\ 2024-12-22\ 123553.png);
-      background-position: center;
-      background-size: cover;
-  }
-    .img12{
-      background-image: url(images/projects/Screenshot\ 2024-12-22\ 123655.png);
-      background-position: center;
-      background-size: cover;
-  }
-  .image-placeholder {
-    height: 50%;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-  }
-  
-  .text-placeholder {
-    padding: 10px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: #3b1c32;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 10px;
+  gap: 20px;
+}
+.figmaTasks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+  align-items: center;
+}
 
-  }
-  
-  .text-placeholder p {
-    margin: 5px 0;
-  }
-  
-  .buttons {
-    margin-top: 10px;
-  }
-  
-  .buttons button {
-    background-color: #7286d3;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin: 0 5px;
-    cursor: pointer;
-  }
-  .buttons button a{
-    text-decoration: none;
-    color: #e5e0ff;
-    font-weight: bold;
-  }
-  .buttons button:hover {
-    background-color: #6072bb;
-  }
+.card {
+  background-color: #fff2f2;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 250px;
+  height: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.img1 {
+  background-image: url(images/projects/Screenshot\ 2024-12-22\ 091543.png);
+  background-position: center;
+  background-size: cover;
+}
+.img2 {
+  background-image: url(images/projects/Screenshot\ 2024-12-22\ 093156.png);
+  background-position: center;
+  background-size: cover;
+}
+.img3 {
+  background-image: url(images/projects/Screenshot\ 2024-12-22\ 093536.png);
+  background-position: center;
+  background-size: cover;
+}
+.img4 {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGWkLDyRM63o3MhIWMUaqjiclMscW40NwdcA&s");
+  background-position: center;
+  background-size: cover;
+}
+.img5 {
+  background-image: url(images/projects/Screenshot\ 2024-12-22\ 122122.png);
+  background-position: center;
+  background-size: cover;
+}
+.img6 {
+  background-image: url(images/projects/Screenshot\ 2024-12-22\ 122330.png);
+  background-position: center;
+  background-size: cover;
+}
+.img7 {
+  background-image: url(images/projects/Screenshot\ 2024-12-22\ 123208.png);
+  background-position: center;
+  background-size: cover;
+}
+.img9 {
+  background-image: url(images/projects/Screenshot\ 2024-12-22\ 123441.png);
+  background-position: center;
+  background-size: cover;
+}
+.img10 {
+  background-image: url(images/projects/Screenshot\ 2024-12-22\ 123513.png);
+  background-position: center;
+  background-size: cover;
+}
+.img11 {
+  background-image: url(images/projects/Screenshot\ 2024-12-22\ 123553.png);
+  background-position: center;
+  background-size: cover;
+}
+.img12 {
+  background-image: url(images/projects/Screenshot\ 2024-12-22\ 123655.png);
+  background-position: center;
+  background-size: cover;
+}
+.image-placeholder {
+  height: 50%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
 
+.text-placeholder {
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #3b1c32;
+}
 
+.text-placeholder p {
+  margin: 5px 0;
+}
 
-  /* footer */
-Footer{
+.buttons {
+  margin-top: 10px;
+}
+
+.buttons button {
+  background-color: #7286d3;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.buttons button a {
+  text-decoration: none;
+  color: #e5e0ff;
+  font-weight: bold;
+}
+.buttons button:hover {
+  background-color: #6072bb;
+}
+
+/* footer */
+Footer {
   margin-top: 15px;
   background-color: #7286d3;
   display: flex;
@@ -246,55 +240,55 @@ Footer{
   color: #3b1c32;
   height: 27vh;
 }
-.footer-container{
+.footer-container {
   width: 60%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-footer .logo-img{
+footer .logo-img {
   width: 200px;
 }
 
-.links-container{
+.links-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
   font-size: 20px;
 }
-.links-container .links a{
+.links-container .links a {
   text-decoration: none;
   color: #3b1c32;
   font-weight: bold;
 }
-.links-container .links a:hover{
+.links-container .links a:hover {
   color: #e5e0ff;
 }
-.fa-brands{
+.fa-brands {
   font-size: 40px;
   padding: 5px;
   color: #3b1c32;
 }
-.fa-brands:hover{
+.fa-brands:hover {
   color: #e5e0ff;
 }
-@media (max-width: 942px){
-  .links-container{
+@media (max-width: 942px) {
+  .links-container {
     font-size: small;
   }
- 
-  footer .logo-img{
+
+  footer .logo-img {
     width: 120px;
     padding: 10px;
   }
-  footer{
+  footer {
     height: 30vh;
     font-size: small;
   }
-  .fa-brands{
+  .fa-brands {
     font-size: 25px;
   }
-  .footer-container{
+  .footer-container {
     justify-content: space-between;
     width: 80%;
   }
