@@ -3,7 +3,7 @@
   padding: 0px;
 }
 body{
-  background-color: #FFF2F2;
+  background-color: var(--mainColor);
   min-height: 100vh;
 }
 /* navbar */
@@ -12,8 +12,8 @@ body{
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #e5e0ff;
-  color: #3b1c32;
+  background-color: var(--headerColor);
+  color: var(--fontColor);
   height: 10%;
 }
 
@@ -32,16 +32,16 @@ body{
 }
 
 .navbar-links li a {
-  color: #3b1c32;
+  color: var(--fontColor);
   font-weight: bolder;
   padding-left: 20px;
   text-decoration: none;
 }
 .navbar-links .selected{
-  color: #7286d3;
+  color: var(--footerColor);
 }
 .navbar-links li a:hover{
-  color: #7286d3;
+  color: var(--footerColor);
 }
 
 .navbar .list-group {
@@ -69,7 +69,7 @@ body{
 
 .list-group label {
   display: block;
-  color: #7286d3;
+  color: var(--footerColor);
   padding: 10px;
   text-align: center;
   cursor: pointer;
@@ -86,22 +86,22 @@ body{
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
-  color: #7286d3;
-  border: 1px solid #7286d3;
+  color: var(--footerColor);
+  border: 1px solid var(--footerColor);
   border-radius: 5px;
 }
 
 .list-group ul li {
   padding: 10px;
-  border-bottom: 1px solid #7286d3;
+  border-bottom: 1px solid var(--footerColor);
 }
 .list-group ul li a{
   text-decoration: none;
-  color: #3b1c32;
+  color: var(--fontColor);
   font-weight: bold;
 }
 .list-group ul li a:hover{
-  color: #7286d3;
+  color: var(--footerColor);
 }
 .list-group input[type="checkbox"]:checked ~ ul {
   max-height: 200px; 
@@ -124,11 +124,10 @@ main{
 .hero .section-container{
   width: 80rem;
   border-radius: 4px;
-  background-color: #e5e0ff;
+  background-color: var(--headerColor);
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #e5e0ff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .hero-section-text{
@@ -138,11 +137,10 @@ main{
   gap: 40px;
 }
 .hero-section-text h2{
-  color: #7286d3;
+  color: var(--footerColor);
   font-size: 40px;
 }
 .hero-section-text h4 , .section-container p{
-  padding-left: 20px;
   font-size: 25px;
 }
 .section-container img{
@@ -150,17 +148,17 @@ main{
 }
 .section-container a{
   text-decoration: none;
-  color: #7286d3;
-  border: 2px solid #7286d3;
+  color: var(--footerColor);
+  border: 2px solid var(--footerColor);
   font-size: 25px;
   width: 100px;
   padding: 10px;
   border-radius: 4px;
 }
 .section-container a:hover{
-  color: #FFF2F2;
-  border: 2px solid #FFF2F2;
-  background-color: #7286d3;
+  color: var(--mainColor);
+  border: 2px solid var(--mainColor);
+  background-color: var(--footerColor);
 }
 @media (max-width: 553px){
   .section-container{
@@ -186,7 +184,7 @@ main{
 .card {
   display: flex;
   align-items: center;
-  background-color: #FFF2F2;
+  background-color: var(--mainColor);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 300px;
@@ -196,7 +194,7 @@ main{
 }
 
 .card:hover {
-  transform: translateY(-5px); /* حركة بسيطة عند التحويم */
+  transform: translateY(-5px); 
 }
 
 .card-image1 {
@@ -232,12 +230,12 @@ main{
   text-align: center;
 }
 .card-text a{
-  color: #3b1c32; 
+  color: var(--fontColor); 
   font-weight: bolder;
   text-decoration: none;
 }
 .card-text a:hover{
-  color: #7286d3;
+  color: var(--footerColor);
 }
 @media (max-width: 553px){
   .cards-container{
@@ -249,13 +247,13 @@ main{
 /* footer */
 Footer{
   margin-top: 15px;
-  background-color: #7286d3;
+  background-color: var(--footerColor);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  color: #3b1c32;
+  color: var(--fontColor);
   height: 27vh;
 }
 .footer-container{
@@ -276,19 +274,19 @@ footer .logo-img{
 }
 .links-container .links a{
   text-decoration: none;
-  color: #3b1c32;
+  color: var(--fontColor);
   font-weight: bold;
 }
 .links-container .links a:hover{
-  color: #e5e0ff;
+  color: var(--headerColor);
 }
 .fa-brands{
   font-size: 40px;
   padding: 5px;
-  color: #3b1c32;
+  color: var(--fontColor);
 }
 .fa-brands:hover{
-  color: #e5e0ff;
+  color: var(--headerColor);
 }
 @media (max-width: 942px){
   .links-container{
